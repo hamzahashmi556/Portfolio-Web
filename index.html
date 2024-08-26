@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="fixed-header">
         <div class="header-left">
@@ -38,8 +40,12 @@
                     </div>
                 </div>
                 <div class="description">
-                    <p>With over three years of experience, I’ve developed and submitted iOS Apps to the App Store for diverse clients. I use SwiftUI and Firebase, following the MVVM pattern and best practices to ensure a smooth user experience.</p>
-                    <p>Currently, I am a BSCS student at Karachi University and have secured notable positions in various competitions, including runner-up in Procomm'24 (FAST) and 4th in CodeBit (UBIT). I’m also actively involved in Google Developer Student Clubs.</p>
+                    <p>With over three years of experience, I’ve developed and submitted iOS Apps to the App Store for
+                        diverse clients. I use SwiftUI and Firebase, following the MVVM pattern and best practices to
+                        ensure a smooth user experience.</p>
+                    <p>Currently, I am a BSCS student at Karachi University and have secured notable positions in
+                        various competitions, including runner-up in Procomm'24 (FAST) and 4th in CodeBit (UBIT). I’m
+                        also actively involved in Google Developer Student Clubs.</p>
                 </div>
             </div>
         </section>
@@ -71,8 +77,8 @@
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="image-container">
+                <!-- <div class="project-card"> -->
+                <!-- <div class="image-container">
                         <div class="image-stack">
                             <img src="images/holr-iOS.png" alt="Holr iOS App" class="blurred-img">
                             <img src="images/holr-iOS.png" alt="Holr iOS App" class="normal-img">
@@ -81,8 +87,8 @@
                     <div class="project-content">
                         <h3>Holr</h3>
                         <p>An innovative chat app enabling local and global conversations within your vicinity.</p>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
                 <!-- Add more project cards similarly -->
             </div>
         </section>
@@ -93,6 +99,16 @@
         </section>
     </div>
 
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalImages" class="image-gallery"></div>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
