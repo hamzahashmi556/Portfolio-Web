@@ -11,6 +11,65 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
+@media only screen and (max-width: 768px) {
+    /* For tablets and below */
+    
+    header {
+        flex-direction: column; /* Stack elements in the header */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+    /* body, h1, h2, h3, p, .header-left, .header-right, .about-content, .profile-info {
+        text-align: center;
+    } */
+
+    .profile-img {
+        margin: 0 auto;
+    }
+
+    .header-left, .header-right {
+        width: 100%; /* Full width for header elements */
+        justify-content: center; /* Center content */
+    }
+
+    .header-right {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: small;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack profile and description vertically */
+    }
+
+    .profile-img {
+        width: 120px; /* Smaller profile image */
+        height: 120px;
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column for projects */
+        gap: 15px; /* Reduce gap between projects */
+    }
+
+    .project-card {
+        margin: 0 auto; /* Center the project cards */
+        width: 90%; /* Make project cards full width */
+    }
+}
 /* Header Styles */
 header {
     position: fixed; /* Fix the header at the top */
@@ -65,7 +124,7 @@ h3 {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
     padding: 20px 0;
