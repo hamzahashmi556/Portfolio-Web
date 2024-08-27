@@ -77,19 +77,6 @@
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
-                <!-- <div class="project-card"> -->
-                <!-- <div class="image-container">
-                        <div class="image-stack">
-                            <img src="images/holr-iOS.png" alt="Holr iOS App" class="blurred-img">
-                            <img src="images/holr-iOS.png" alt="Holr iOS App" class="normal-img">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Holr</h3>
-                        <p>An innovative chat app enabling local and global conversations within your vicinity.</p>
-                    </div> -->
-                <!-- </div> -->
-                <!-- Add more project cards similarly -->
             </div>
         </section>
 
@@ -99,12 +86,15 @@
         </section>
     </div>
 
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <div id="modalImages" class="image-gallery"></div>
-            <p id="modalDescription"></p>
+    <!-- Project Details Overlay -->
+    <div id="project-details-overlay" class="project-details-overlay" style="display: none;">
+        <div class="overlay-content">
+            <span class="close-btn" onclick="closeProjectDetails()">&times;</span>
+            <h2 id="project-title">Project Title</h2>
+            <p id="project-description">Detailed Description</p>
+            <div id="project-tools">Tools Used: ...</div>
+            <div id="project-images"></div>
+            <a id="project-link" href="#" target="_blank">View App</a>
         </div>
     </div>
 
